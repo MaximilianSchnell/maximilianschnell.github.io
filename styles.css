@@ -1,0 +1,107 @@
+/* Master Styles */
+body {
+    margin: 0px;
+
+    background-color: rgb(46, 52, 69);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Navbar Styles */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    background-color: rgb(82, 94, 101);
+    box-shadow: 0 0 15px black;
+}
+
+.navbar-content-wrapper {
+    margin: auto;
+    width: min(100%, 1300px);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-content-wrapper > .left-side {
+    margin-top: 10px;
+
+    display: flex;
+}
+
+.navbar-content-wrapper > .right-side {
+    text-align: right;
+}
+
+.navbar-content-wrapper > .left-side > div {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 3px;
+    width: 6em;
+
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.navbar-link {
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navbar-link > a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navbar-link:hover {
+    border-bottom: 3px solid hsl(120, 50%, 65%);
+}
+
+.navbar-link a:hover {
+    color: hsl(120, 50%, 65%);
+}
+
+.active-navbar-link {
+    border-bottom: 3px solid hsl(120, 50%, 65%);
+}
+
+.active-navbar-link a {
+    color: hsl(120, 50%, 65%);
+}
+
+/* Content */
+
+.content-wrapper {
+    margin-top: 43px;
+
+    color: whitesmoke;
+}
+
+/* Homepage */
+
+.homepage-content-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: min(700px, 90%);
+
+    text-align: center;
+}
+
+.title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 4em;
+}
+
+.introduction {
+    text-align: left;
+    font-size: 1.5em;
+}
