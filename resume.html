@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Resume</title>
+    <title>Homepage</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,30 +13,33 @@
         <div class="navbar">
             <div class="navbar-content-wrapper">
                 <div class="left-side">
-                    <a href="index.html">
+                    <a id="navbar_name" href="index.html">
                         Maximilian Schnell
                     </a>
                 </div>
                 <div class="right-side">
                     <div class="navbar-link">
-                        <a href="about.html">
-                            About
-                        </a>
+                        <a id="navbar_about" href="about.html"></a>
                     </div>
                     <div class="navbar-link">
-                        <a href="projects.html">
-                            Projects
-                        </a>
+                        <a id="navbar_projects" href="projects.html"></a>
                     </div>
                     <div class="navbar-link active-navbar-link">
-                        <a href="resume.html">
-                            Resume
-                        </a>
+                        <a id="navbar_resume" href="resume.html"></a>
                     </div>
                     <div class="navbar-link">
-                        <a href="contact.html">
-                            Contact
-                        </a>
+                        <a id="navbar_contact" href="contact.html"></a>
+                    </div>
+                </div>
+                <div class="language-select-wrapper">
+                    <div class="language-select-link">
+                        <a href="#en">English</a>
+                    </div>
+                    <div class="language-select-link">
+                        <a href="#de">Deutsch</a>
+                    </div>
+                    <div class="language-select-link">
+                        <a href="#jp">日本語</a>
                     </div>
                 </div>
             </div>
@@ -47,5 +50,6 @@
             </div>
         </div>
     </div>
+    <script src="lang.js"></script>
 </body>
 </html>

@@ -26,8 +26,14 @@ body {
 
 .container {
     position: absolute;
-    display: grid;
-    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.content-wrapper {
+    margin-top: 100px;
+    width: 100%;
+
+    color: var(--main-text-color);
 }
 
 #bg-canvas {
@@ -94,15 +100,15 @@ body {
     transition: color 0.5s;
 }
 
-.language-select-wrapper {
+.language-select-wrapper > .language-select-link {
     text-align: center;
     font-size: 1.5em;
-    line-height: 45px;
+    line-height: 25px;
     width: 6em;
     margin: 5px;
 }
 
-.language-select-wrapper > a {
+.language-select-wrapper > .language-select-link > a {
     color: var(--navbar-text-color-faded);
     text-decoration: none;
 }
@@ -121,24 +127,14 @@ body {
     background: var(--navbar-color-highlight);
 }
 
-
-
-/* Content */
-
-.content-wrapper {
-    margin-top: 100px;
-
-    color: var(--main-text-color);
-}
-
 /* Homepage */
 
 .homepage-content-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 100px;
     width: min(1300px, 90%);
     font-size: 2em;
 }
@@ -150,6 +146,7 @@ body {
 .homepage-content-wrapper > .introduction > h1{
     margin-top: 0px;
     margin-bottom: 0px;
+    word-wrap: keep-all;
 }
 
 .homepage-content-wrapper > .photo{
