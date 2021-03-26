@@ -61,8 +61,8 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    width: min(100%, 1300px);
-    margin: 0 auto
+    width: min(80%, 1800px);
+    margin: 0 auto;
 }
 
 .navbar-content-wrapper > .left-side {
